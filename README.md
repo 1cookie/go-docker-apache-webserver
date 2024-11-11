@@ -32,16 +32,16 @@ proxied through it.
     make up
 
 ## How to Use Each Command
-`make up`: Starts all services in detached mode (running in the background).
-`make up-with-logs`: Starts all services and follows their logs.
-`make build`: Builds or rebuilds the Docker images.
-`make build-no-cache`: Rebuilds the images without cache, useful if you want a clean rebuild.
-`make down`: Stops and removes containers.
-`make logs`: Shows logs for all services.
-`make restart`: Restarts the services.
-`make configtest`: Runs an `Apache` configuration test inside the `Apache` container to check syntax.
-`make clean`: Stops containers and removes all images, volumes, and orphaned containers, performing a complete cleanup.
-`make logs-<service_name>`: Allows you to view logs for a specific service. For example, make logs-`Apache` or make logs-mysql.
+- `make up`: Starts all services in detached mode (running in the background).
+- `make up-with-logs`: Starts all services and follows their logs.
+- `make build`: Builds or rebuilds the Docker images.
+- `make build-no-cache`: Rebuilds the images without cache, useful if you want a clean rebuild.
+- `make down`: Stops and removes containers.
+- `make logs`: Shows logs for all services.
+- `make restart`: Restarts the services.
+- `make configtest`: Runs an `Apache` configuration test inside the `Apache` container to check syntax.
+- `make clean`: Stops containers and removes all images, volumes, and orphaned containers, performing a complete cleanup.
+- `make logs-<service_name>`: Allows you to view logs for a specific service. For example, make logs-`Apache` or make logs-mysql.
 
 Then visit: http://localhost/api/users or http://localhost/api/some-route
 
