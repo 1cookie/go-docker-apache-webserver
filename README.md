@@ -27,9 +27,7 @@ and port.
 **Centralized Logging and Security:** Requests go through `Apache`, so logs and security rules are applied to all services
 proxied through it.
 
-## Running the App
-
-`Makefile`
+## Running the App - `Makefile`
 
     make up
 
