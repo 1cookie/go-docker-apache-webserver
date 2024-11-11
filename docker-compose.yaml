@@ -6,7 +6,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./configs/apache.local.conf:/usr/local/apache2/conf/httpd.conf
+      - ./configs/apache.${ENV:-local}.conf:/usr/local/apache2/conf/httpd.conf
       - ./web/static:/usr/local/apache2/htdocs/
     networks:
       - backend
