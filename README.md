@@ -7,7 +7,7 @@ This scaffold demonstrates how to set up a Go application behind an `Apache` web
 
 ## Architecture
 
-`Apache` runs on port `80`, the default `HTTP` port. Clients connect here, allowing seamless access via http://localhost:8080/.
+`Apache` runs on port `80`, the default `HTTP` port. Clients connect here, allowing seamless access via http://localhost/.
 Go app runs on port `8080`, but it is only accessible to `Apache`, which forwards requests to this port using reverse proxy
 settings (ProxyPass and ProxyPassReverse).
 When a client makes a request, it hits `Apache` on port `80`. `Apache` acts as a middle layer, routing specific requests to
@@ -45,7 +45,7 @@ proxied through it.
 `make clean`: Stops containers and removes all images, volumes, and orphaned containers, performing a complete cleanup.
 `make logs-<service_name>`: Allows you to view logs for a specific service. For example, make logs-`Apache` or make logs-mysql.
 
-Then visit: http://localhost:8080/api/users or http://localhost:8080/api/some-route
+Then visit: http://localhost/api/users or http://localhost/api/some-route
 
 ## Useful Commands
 
