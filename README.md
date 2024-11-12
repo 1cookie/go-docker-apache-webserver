@@ -45,16 +45,6 @@ proxied through it.
 
 Then visit: http://localhost/api/users or http://localhost/api/some-route
 
-## Useful Commands
-
-To view logs for each service:
-
-```
-docker-compose logs mysql
-docker-compose logs apache
-docker-compose logs myapp
-```
-
 ## To access the Go app container:
 
     docker-compose exec myapp sh
